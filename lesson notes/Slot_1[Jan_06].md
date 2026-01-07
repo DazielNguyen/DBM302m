@@ -1,5 +1,5 @@
 
-# **Slot 1 - Cshapter 1: Introduction & Fundamentals**
+# **Slot 1 - Chapter 1: Introduction & Fundamentals**
 
 **Tổng quan chương:**
 Chương này thiết lập nền tảng tư duy cho toàn bộ môn học. Chúng ta đi từ **Định nghĩa (1.1)** (Data Mining là gì, tại sao cần?)  **Hiểu dữ liệu (1.2)** (Dữ liệu thô trông như thế nào, đo lường ra sao?)  **Tiền xử lý (1.3)** (Làm sạch và biến đổi dữ liệu để sẵn sàng cho mô hình).
