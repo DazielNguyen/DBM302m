@@ -148,52 +148,217 @@ Những lợi ích này khiến kho dữ liệu trở nên thiết yếu đối 
 - Bảo mật, bảo trì và chất lượng dữ liệu là rất quan trọng.
 - Nó đóng vai trò then chốt trong các chiến lược dựa trên dữ liệu.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---
 
 ## 2. Introduction to Data Visualization (Tổng quan trực quan hóa)
 
-*Nguồn tham khảo: Slide 2.1*
+### 2.1 Định nghĩa về Data Visualization
 
-### 2.1. Tại sao cần Visualization?
+![07-10-types-of-data-visualization](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/07-10-types-of-data-visualization.jpg)
+
+> Trực quan hóa dữ liệu
+
+- Trực quan hóa dữ liệu là việc **biểu diễn dữ liệu và thông tin** bằng đồ họa sử dụng các yếu tố trực quan như **biểu đồ, đồ thị và bản đồ**.
+- Đây là một công cụ mạnh mẽ cho phép khám phá, phân tích và truyền đạt những hiểu biết từ các tập dữ liệu phức tạp một cách **intuitive manger** *trực quan và dễ hiểu*.
+- Trong lĩnh vực khai thác dữ liệu, trực quan hóa dữ liệu đóng vai trò quan trọng trong việc phát hiện các mẫu, xu hướng và mối quan hệ mà nếu không sẽ khó xác định được.
+- Chiều dữ liệu được ví dụ như 1 cột trong bảng dữ liệu.
+
+### 2.2 Tầm quan trọng của trực quan hóa dữ liệu trong khai thác dữ liệu - Phần 1:
+
+- Trực quan hóa dữ liệu giúp hiểu rõ các **mô hình và cấu trúc tiềm ẩn bên trong dữ liệu**. Nó cho phép xác định các mối tương quan, cụm dữ liệu, các giá trị ngoại lệ và những thông tin chi tiết có giá trị khác, từ đó thúc đẩy việc ra quyết định sáng suốt.
+
+- Nó tạo điều kiện **thuận lợi cho việc truyền đạt hiệu quả** các phát hiện đến nhiều bên liên quan, bao gồm cả đối tượng **kỹ thuật và phi kỹ thuật**. Các hình ảnh trực quan có thể truyền tải thông tin phức tạp dễ dàng hơn so với dữ liệu thô hoặc mô tả bằng văn bản.
+
+### 2.3 Tầm quan trọng của trực quan hóa dữ liệu trong khai thác dữ liệu - Phần 2:
+
+- Bằng cách trực quan hóa dữ liệu, chúng ta có thể **nhanh chóng phát hiện các bất thường**, nhận diện xu hướng và đưa ra dự đoán dựa trên dữ liệu. Điều này cho phép chúng ta thu được những hiểu biết **hữu ích và trích xuất giá trị** từ các tập dữ liệu lớn và phức tạp.
+
+- Trực quan hóa dữ liệu giúp **tăng cường quá trình phân tích dữ liệu khám phá**, cho phép người khai thác dữ liệu tương tác thao tác với các hình ảnh trực quan, lọc dữ liệu và khám phá các mẫu ẩn hoặc các điểm bất thường trong thời gian thực.
+
+![09-Crunching-the-Numbers--Topline-Insights-through-Data-Analytics--The-Importance-of-Data-Visualization](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/09-Crunching-the-Numbers--Topline-Insights-through-Data-Analytics--The-Importance-of-Data-Visualization.webp)
+
+> Tầm quan trọng của Data Visualization
+
+### 2.4 Mục tiêu và lợi ích của trực quan hóa dữ liệu
+
+**Đơn giản hóa sự phức tạp:**
+
+- Các hình ảnh trực quan giúp đơn giản hóa các tập dữ liệu phức tạp bằng cách trình bày thông tin một cách ngắn gọn và có tổ chức. Chúng cô đọng lượng dữ liệu khổng lồ thành các bản tóm tắt trực quan dễ hiểu và dễ diễn giải hơn.
+
+![10](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/10.png)
+
+> Ví dụ đơn giản hóa sự phức tạp trong Visualization
+
+**Xác định các mẫu và xu hướng:**
+
+- Các biểu diễn trực quan giúp chúng ta xác định các mẫu, xu hướng và mối quan hệ giữa các biến số mà có thể không rõ ràng trong dữ liệu thô. Bằng cách phát hiện ra các mẫu này, chúng ta có thể đưa ra dự đoán tốt hơn và rút ra những hiểu biết có thể hành động được.
+
+![11](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/11.webp)
+
+> Ví dụ xác định các mẫu và xu hướng
+
+**Hỗ trợ ra quyết định(Aid Decision- Making):**
+
+- Trực quan hóa dữ liệu cho phép người khai thác dữ liệu đưa ra các quyết định sáng suốt hơn bằng cách cung cấp sự hiểu biết rõ ràng về dữ liệu. Các biểu diễn trực quan hỗ trợ việc xác định các giá trị ngoại lệ, thực hiện so sánh và đánh giá các kịch bản khác nhau.
+
+![12](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/12.jpg)
+
+> Ví dụ dashboard hỗ trợ ra quyết định
+
+**Nâng cao khả năng khám phá dữ liệu:**
+
+- Các hình ảnh trực quan cho phép khám phá dữ liệu một cách tương tác, giúp người dùng **drill down** *đi sâu* vào các chi tiết cụ thể, lọc dữ liệu và khám phá các góc nhìn khác nhau. Tính tương tác này thúc đẩy sự hiểu biết sâu sắc hơn về dữ liệu cơ bản.
+
+> Trực quan hóa dữ liệu giúp đặt dữ liệu vào đúng ngữ cảnh.
+
+![13](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/13.png)
+
+
+**Cải thiện giao tiếp:**
+
+- Hình ảnh trực quan là một phương tiện hiệu quả để truyền đạt các phát hiện và hiểu biết cho các bên liên quan. Chúng tạo điều kiện thuận lợi cho việc chia sẻ thông tin một cách trực quan **hấp dẫn và dễ hiểu**, cho phép cộng tác và ra quyết định tốt hơn. Hỗ trợ trong việc communicate tốt hơn. 
+
+
+### 2.5 Tại sao cần Visualization?
 
 * **Sức mạnh não bộ:** Con người xử lý hình ảnh nhanh hơn văn bản/số liệu gấp nhiều lần.
 * **Mục tiêu:**
 1. **Exploration (Khám phá):** Tìm ra pattern hoặc outlier (điểm bất thường) mà thống kê thuần túy không thấy.
 2. **Communication (Truyền tải):** Kể chuyện với dữ liệu (Data Storytelling) cho stakeholders.
 
-
-
-### 2.2. Phân loại dữ liệu để chọn biểu đồ
+### 2.6 Phân loại dữ liệu để chọn biểu đồ
 
 Việc chọn biểu đồ phụ thuộc vào loại biến (Variable types):
 
 * **Categorical (Định danh):** Nominal (Tên, màu sắc), Ordinal (Xếp hạng).  Thường dùng Bar chart, Pie chart.
 * **Numerical (Định lượng):** Discrete (Số nguyên), Continuous (Số thực).  Thường dùng Histogram, Scatter plot, Line chart.
 
+### Tóm tắt
+
+- Data visualization: Graphical data representation.
+- Importance in data mining: Clarity, insights, decision support.
+- Goals: Simplify, discover, communicate.
+- Benefits: Understanding, speed, communication.
+
+[Kiến thức ôn lại một số thuật toán trong Machine Learning](https://www.youtube.com/watch?v=59XV4o8hOBk&t=613s)
+
 ---
-
 ## 3. Visualization of Numerical Data (Hiển thị dữ liệu số)
-
-*Nguồn tham khảo: Slide 2.2*
 
 Phần này tập trung vào các kỹ thuật cho dữ liệu **Numerical** (quan trọng nhất cho AI/ML).
 
-### 3.1. Univariate Analysis (Phân tích 1 biến)
+### 3.1 Numerical Data (Dữ liệu số)
+
+- Dữ liệu số bao gồm các **giá trị định lượng có thể đo lường** và **biểu diễn bằng thang đo số**. Việc trực quan hóa dữ liệu số giúp chúng ta hiểu được sự phân bố, **xu hướng và mối quan hệ giữa các biến số số**.
+
+### 3.2 Numerical Data Visualization (Trực quan hóa dữ liệu số)
+
+- Trực quan hóa dữ liệu số đề cập đến việc **biểu diễn dữ liệu định lượng bằng đồ thị, biểu đồ và đồ thị** để **truyền đạt thông tin** một cách hiệu quả.
+
+- **Não bộ con người** xử lý thông tin **trực quan hiệu quả hơn** dữ liệu thô.
+
+- Việc trực quan hóa giúp xác định các mẫu, xu hướng và các điểm bất thường trong dữ liệu số, dẫn đến việc ra **quyết định tốt hơn**.
+
+### 3.3 Các loại hình trực quan hóa khác nhau và ứng dụng của chúng 
+
+
+**Line Graphs (Biểu đồ đường): Mô tả xu hướng theo thời gian hoặc dữ liệu có thứ tự**
+- Biểu đồ đường nối các điểm dữ liệu bằng các đường thẳng để thể hiện xu hướng theo thời gian hoặc một biến số có thứ tự.
+- Thể hiện xu hướng thị trường chứng khoán, theo dõi sự thay đổi nhiệt độ, thể hiện sự tăng trưởng dân số.
+
+**Bar Charts (Biểu đồ cột): Hiển thị dữ liệu phân loại bằng hình chữ nhật**
+
+- Biểu đồ cột sử dụng các cột hình chữ nhật để so sánh dữ liệu phân loại.
+- Trực quan hóa kết quả khảo sát, so sánh doanh số bán hàng của các sản phẩm khác nhau, hiển thị phân bố tần suất.
+
+**Scatter Plot (Biểu đồ phân tán): Trực quan hóa mối quan hệ giữa hai biến số**
+
+- Biểu đồ phân tán sử dụng các điểm dữ liệu để hiển thị mối quan hệ giữa hai biến số dạng số. Giả sử biến số a thay đổi thì biến số b sẽ bị ảnh hưởng như thế nào?
+- Đánh giá mối tương quan giữa các biến số, xác định các cụm hoặc xu hướng, phát hiện các giá trị ngoại lệ.
+
+**Line Charts and Area Charts**
+
+- **Biểu đồ đường** hiển thị các điểm dữ liệu được nối bằng các đường thẳng, thể hiện xu hướng hoặc sự thay đổi của một biến số theo thời gian hoặc một chiều liên tục khác.
+
+- **Biểu đồ vùng** tương tự như biểu đồ đường nhưng được tô màu hoặc vẽ hoa văn bên dưới đường thẳng, thể hiện giá trị tích lũy của biến số.
+
+![14](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/14.png)
+
+**Bar Charts and Histograms**
+
+- **Biểu đồ cột** sử dụng các thanh hình chữ nhật có chiều dài hoặc chiều cao khác nhau để biểu thị giá trị của các danh mục hoặc nhóm khác nhau. Chúng hữu ích để so sánh dữ liệu rời rạc hoặc dữ liệu phân loại.
+
+- **Biểu đồ tần số** hiển thị sự phân bố của dữ liệu liên tục bằng cách chia dữ liệu thành các khoảng hoặc khoảng thời gian và biểu thị tần suất hoặc số lượng điểm dữ liệu trong mỗi khoảng dưới dạng các thanh dọc.
+
+![15](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/15.png)
+
+**Scatter Plots and Bubble Charts**
+
+- **Biểu đồ phân tán** thể hiện mối quan hệ giữa hai biến số dạng số. Mỗi điểm dữ liệu được biểu diễn dưới dạng một điểm trên đồ thị, với một biến số trên trục x và biến số còn lại trên trục y.
+
+- **Biểu đồ bong bóng** là một phần mở rộng của biểu đồ phân tán, trong đó một biến số dạng số bổ sung được biểu thị bằng kích thước hoặc màu sắc của các điểm dữ liệu, tạo thêm chiều sâu cho hình ảnh trực quan.
+
+![16](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/16.png)
+
+**Box Plots and Violin Plots**
+
+- **Biểu đồ hộp** (còn được gọi là biểu đồ hộp và râu) hiển thị các số liệu thống kê tóm tắt của một biến số dạng số, bao gồm giá trị nhỏ nhất, lớn nhất, trung vị, tứ phân vị và các giá trị ngoại lệ. Chúng cung cấp cái nhìn sâu sắc về phân bố và độ lệch của dữ liệu.
+- **Biểu đồ violin** kết hợp biểu đồ hộp với biểu đồ mật độ hạt nhân, cung cấp cái nhìn chi tiết hơn về phân bố và mật độ của dữ liệu.
+
+![17](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/17.png)
+
+**Heatmaps and Treemaps**
+
+- **Biểu đồ nhiệt (Heatmap)** sử dụng các ô được mã hóa màu trong một lưới để biểu diễn giá trị của một biến số dạng số trên hai chiều. Chúng hiệu quả trong việc trực quan hóa các tập dữ liệu lớn và xác định các mẫu hoặc mối tương quan.
+
+- **Biểu đồ cây (Treemap)** biểu diễn dữ liệu phân cấp dưới dạng các hình chữ nhật lồng nhau, với kích thước của mỗi hình chữ nhật tỷ lệ thuận với một giá trị số. Chúng hữu ích để hiển thị các mối quan hệ phân cấp và so sánh tỷ lệ.
+
+![18](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/18.png)
+
+### 3.4 Choosing the Right Visualization for Your Data
+
+**Các yếu tố ảnh hưởng đến việc lựa chọn hình thức trực quan hóa:**
+
+- Bản chất của dữ liệu (phân loại, thứ tự, số): Các loại dữ liệu khác nhau yêu cầu các hình thức trực quan hóa cụ thể.
+- Phân bố và độ chi tiết của dữ liệu: Phân bố dữ liệu ảnh hưởng đến việc lựa chọn hình thức trực quan hóa.
+
+**Hướng dẫn về việc kết hợp các loại dữ liệu với các hình thức trực quan hóa:**
+
+- Sơ đồ cây quyết định để lựa chọn hình thức trực quan hóa phù hợp: Hướng dẫn từng bước để chọn đúng loại biểu đồ.
+- Ví dụ về các lựa chọn trực quan hóa đúng và sai: Hình minh họa để củng cố khái niệm.
+
+### 3.5 Các yếu tố thiết kế và cách sử dụng màu sắc (Elements of Design and Colour Usage)
+
+**Tầm quan trọng của các nguyên tắc thiết kế trong trực quan hóa dữ liệu:**
+
+- Nhấn mạnh sự rõ ràng, đơn giản và nhất quán: Đề cập đến tầm quan trọng của thiết kế trong trực quan hóa dữ liệu.
+- Trực quan hóa được thiết kế tốt so với trực quan hóa được thiết kế kém.
+
+![19](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/19.png)
+
+**Lựa chọn bảng màu phù hợp cho dữ liệu số:**
+
+- Giải quyết các vấn đề tiềm ẩn về chứng mù màu: Đảm bảo tính khả dụng và toàn diện.
+- Ví dụ về các bảng màu phù hợp cho dữ liệu số
+
+![20](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/20.png)
+
+**Những lưu ý về chứng mù màu và khả năng tiếp cận:**
+
+- Thiết kế hình ảnh trực quan dễ tiếp cận cho người dùng mù màu: Áp dụng các phương pháp tốt nhất cho thiết kế toàn diện.
+- Ví dụ trực quan về hình ảnh trực quan có và không có lưu ý đến chứng mù màu.
+
+![21](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_02/21.png)
+
+### 3.6 Các phương pháp tốt nhất để trực quan hóa dữ liệu số
+
+- Chọn kỹ thuật trực quan hóa phù hợp dựa trên bản chất của dữ liệu và những thông tin bạn muốn truyền tải.
+- Đảm bảo việc ghi nhãn rõ ràng cho các trục, tiêu đề và chú thích để cung cấp ngữ cảnh và hỗ trợ việc diễn giải.
+- Sử dụng thang đo và phạm vi trục phù hợp để tránh làm sai lệch dữ liệu hoặc gây hiểu lầm cho người xem.
+- Áp dụng màu sắc và các tín hiệu trực quan một cách cẩn trọng để làm nổi bật các mẫu, xu hướng hoặc các điểm dữ liệu cụ thể.
+- Cân nhắc thêm các tính năng tương tác, chẳng hạn như phóng to hoặc lọc, để cho phép người dùng khám phá dữ liệu chi tiết hơn.
+
+### Univariate Analysis (Phân tích 1 biến)
 
 Dùng để xem phân phối của *một* thuộc tính (ví dụ: Phân phối tuổi của khách hàng).
 
@@ -208,7 +373,7 @@ Dùng để xem phân phối của *một* thuộc tính (ví dụ: Phân phối
 
 
 
-### 3.2. Bivariate Analysis (Phân tích 2 biến)
+### Bivariate Analysis (Phân tích 2 biến)
 
 Dùng để tìm mối quan hệ giữa *hai* thuộc tính (ví dụ: Giá nhà vs. Diện tích).
 
@@ -216,9 +381,7 @@ Dùng để tìm mối quan hệ giữa *hai* thuộc tính (ví dụ: Giá nhà
 * Mỗi điểm là một quan sát (x, y).
 * Giúp nhìn thấy: Tương quan (Correlation) - Tuyến tính hay phi tuyến tính, Tích cực hay tiêu cực.
 
-
-
-### 3.3. Tra cứu nhanh: Khi nào dùng biểu đồ nào?
+### Tra cứu nhanh: Khi nào dùng biểu đồ nào?
 
 | Loại biểu đồ | Mục đích sử dụng (Use Case) | Code Library (Python) |
 | --- | --- | --- |
@@ -227,7 +390,3 @@ Dùng để tìm mối quan hệ giữa *hai* thuộc tính (ví dụ: Giá nhà
 | **Scatter Plot** | Tìm mối quan hệ (Correlation) giữa 2 biến số. | `plt.scatter()`, `sns.scatterplot()` |
 | **Line Chart** | Xem xu hướng theo thời gian (Time-series). | `plt.plot()`, `sns.lineplot()` |
 | **Heatmap** | Xem ma trận tương quan (Correlation Matrix). | `sns.heatmap()` |
-
----
-
-*Lưu ý: File này tổng hợp kiến thức nền tảng về hạ tầng dữ liệu và kỹ năng trực quan hóa số liệu, phục vụ trực tiếp cho bước EDA (Exploratory Data Analysis) trong Python.*
