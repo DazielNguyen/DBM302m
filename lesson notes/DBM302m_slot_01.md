@@ -1,14 +1,14 @@
-
 # **Slot 1 - Chapter 1: Introduction & Fundamentals**
 
+**Ngày học: 06/01/2026**
+
 **Tổng quan chương:**
+
 Chương này thiết lập nền tảng tư duy cho toàn bộ môn học. Chúng ta đi từ **Định nghĩa (1.1)** (Data Mining là gì, tại sao cần?)  **Hiểu dữ liệu (1.2)** (Dữ liệu thô trông như thế nào, đo lường ra sao?)  **Tiền xử lý (1.3)** (Làm sạch và biến đổi dữ liệu để sẵn sàng cho mô hình).
 
 ---
 
 ## 1. Introduction to Data Mining (Tổng quan)
-
-*Nguồn tham khảo: Slide 1.1*
 
 ### 1.1. Tại sao cần Data Mining?
 
@@ -28,7 +28,6 @@ Trong kỷ nguyên số, chúng ta đang "chết chìm trong dữ liệu nhưng 
 5. **Knowledge Presentation:** Trực quan hóa và báo cáo kết quả.
 
 
-
 ### 1.3. Bốn góc nhìn chính (The 4 Views)
 
 Hệ thống Data Mining được xây dựng dựa trên sự tương tác của 4 yếu tố :
@@ -41,8 +40,6 @@ Hệ thống Data Mining được xây dựng dựa trên sự tương tác củ
 ---
 
 ## 2. Data Understanding (Hiểu dữ liệu)
-
-*Nguồn tham khảo: Slide 1.2*
 
 Trước khi xử lý, ta cần hiểu "nguyên liệu" đầu vào.
 
@@ -73,8 +70,6 @@ Trước khi xử lý, ta cần hiểu "nguyên liệu" đầu vào.
 
 ## 3. Data Preprocessing (Tiền xử lý dữ liệu)
 
-*Nguồn tham khảo: Slide 1.3*
-
 **Mục tiêu:** Cải thiện chất lượng dữ liệu để tăng độ chính xác của mô hình ("Garbage in, garbage out").
 
 ### 3.1. Quy trình Tiền xử lý (Full Flow)
@@ -87,7 +82,7 @@ Dữ liệu thô thường bị lỗi, thiếu hoặc không nhất quán. Ta x�
 
 
 **Kỹ thuật:**
-* *Missing Data:* Điền bằng Mean/Median, hoặc dùng KNN (Imputation).* 
+* *Missing Data:* Điền bằng Mean/Median, hoặc dùng KNN (Imputation).
 - *Duplicate:* Loại bỏ các bản ghi trùng lặp.
 
 #### B2: Data Integration (Tích hợp)
@@ -110,7 +105,6 @@ Dữ liệu thô thường bị lỗi, thiếu hoặc không nhất quán. Ta x�
 
 * **Nhiệm vụ:** Giảm kích thước dữ liệu nhưng giữ lại thông tin quan trọng.
 
-
 * **Kỹ thuật:**
 * *Dimensionality Reduction:* Giảm số lượng thuộc tính (PCA, Feature Selection).
 * *Numerosity Reduction:* Giảm số lượng dòng dữ liệu.
@@ -121,7 +115,3 @@ Dữ liệu thô thường bị lỗi, thiếu hoặc không nhất quán. Ta x�
 * **3Vs/5Vs:** Đặc điểm của Big Data (Volume, Variety, Velocity,...) .
 * **Feature Engineering:** Tạo ra các thuộc tính mới từ thuộc tính cũ để tăng sức mạnh dự báo.
 * **Outlier/Anomaly:** Các điểm dữ liệu bất thường, lệch xa so với chuẩn.
-
----
-
-*Lưu ý: File này tổng hợp nội dung từ các slide 1.1, 1.2, và 1.3 môn Data Mining.*
