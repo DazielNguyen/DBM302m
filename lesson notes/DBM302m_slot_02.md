@@ -1,5 +1,7 @@
 # **Slot 2 - Chapter 1 & 2: Warehousing & Visualization**
 
+**Ngày học: 09/01/2026**
+
 **Nội dung chương học:**
 - Data Warehouse - **1.4**
 - Visualization - **2.1 & 2.2**
