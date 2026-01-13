@@ -158,54 +158,82 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 
 ---
 
-## 2. Visualization of Dashboards (Bảng điều khiển)
+## II. Visualization of Dashboards (Bảng điều khiển)
 
 Sau khi đã tạo ra các biểu đồ riêng lẻ (Charts), ta cần tập hợp chúng lại để kể một câu chuyện dữ liệu hoàn chỉnh.
 
-### 2.1. Dashboard là gì?
+### 1. Dashboard là gì?
 
-Dashboard là một giao diện trực quan hiển thị thông tin quan trọng nhất cần thiết để đạt được một hoặc nhiều mục tiêu.
+**Dashboard** (Bảng điều khiển) là các màn hình hiển thị trực quan tương tác, **trình bày thông tin tóm tắt** và có thể hành động ngay lập tức. Chúng được thiết kế để cung cấp cái nhìn toàn diện về các chỉ số hiệu suất chính (KPI), số liệu và xu hướng nhằm giám sát và ra quyết định hiệu quả.
 
-* **Đặc điểm:** Thông tin được gom gọn trên một màn hình (consolidated on a single screen) để người xem có thể giám sát trong nháy mắt.
-* **Mục tiêu:** Hỗ trợ ra quyết định (Decision Making) và giám sát hiệu suất (Monitoring).
+**Mục đích của bảng điều khiển** là cung cấp cho người dùng những thông tin chi tiết phù hợp và kịp thời, cho phép họ đánh giá hiệu suất, xác định các vấn đề hoặc cơ hội và thực hiện các hành động thích hợp.
 
-### 2.2. Các thành phần chính của Dashboard
+### 2. Các thành phần chính của Dashboard
 
-Một Dashboard chuẩn thường bao gồm các "mảnh ghép" sau:
+**Các tiện ích (Widgets):** Bảng điều khiển bao gồm nhiều tiện ích khác nhau như biểu đồ, đồ thị, bảng, đồng hồ đo hoặc bản đồ, thể hiện các khía cạnh khác nhau của dữ liệu.
 
-1. **KPIs (Key Performance Indicators):** Các chỉ số đo lường hiệu suất quan trọng nhất (thường là các con số lớn, nằm trên cùng). Ví dụ: *Tổng doanh thu, Lợi nhuận ròng.*
-2. **Charts & Graphs:** Các biểu đồ (Bar, Line, Pie...) để diễn giải chi tiết cho KPI.
-3. **Tables (Bảng dữ liệu):** Hiển thị chi tiết dòng dữ liệu khi cần tra cứu cụ thể.
-4. **Filters/Interactivity (Bộ lọc):** Cho phép người dùng tương tác (chọn ngày tháng, chọn khu vực) để dữ liệu tự động cập nhật theo.
+**Bộ lọc (Filters):** Các bộ lọc tương tác cho phép người dùng tùy chỉnh chế độ xem của bảng điều khiển bằng cách chọn các chiều cụ thể, khoảng thời gian hoặc các tham số khác.
+
+**Phân tích chi tiết (Drill-down và Drill-up):** Bảng điều khiển thường cung cấp khả năng phân tích chi tiết các thông tin cụ thể hoặc phân tích tổng quan ở cấp độ cao hơn để phân tích sâu hơn.
+
+**Cảnh báo và thông báo (Clarities and Notifications):** Bảng điều khiển có thể bao gồm các cảnh báo hoặc thông báo làm nổi bật thông tin quan trọng hoặc các bất thường, giúp người dùng luôn được thông báo về các sự kiện hoặc thay đổi quan trọng.
 
 ### 2.3. Nguyên tắc thiết kế Dashboard (Design Principles)
 
-Thiết kế Dashboard không chỉ là "vẽ cho đẹp", mà là "thiết kế để dùng".
+**Data Organization and Layout (Tổ chức và bố cục dữ liệu):** Sắp xếp các thành phần của bảng điều khiển một cách logic và trực quan, đảm bảo rằng thông tin liên quan được nhóm lại với nhau để dễ hiểu.
+
+![10-data-org-layout](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/10-data-org-layout.png)
+
+**Visual Hierarchy and Emphasis (Thứ tự ưu tiên và nhấn mạnh trực quan):** Sử dụng các tín hiệu trực quan như kích thước, màu sắc và vị trí để nhấn mạnh dữ liệu quan trọng và hướng sự chú ý của người dùng đến những thông tin chi tiết phù hợp nhất.
+
+![11-Visual-Hierarchy&Emphasis](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/11-Visual-Hierarchy&Emphasis.png)
+
+**Color Schemes and Aesthetics (Phối màu và tính thẩm mỹ):** Chọn bảng màu dễ nhìn, phù hợp với dữ liệu và mục đích tổng thể của bảng điều khiển. Tránh các sự kết hợp màu sắc quá rực rỡ hoặc gây mất tập trung.
+
+![12-Color-Schemes&Aesthetics](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/12-Color-Schemes&Aesthetics.png)
+
+
+**Interactivity and User Experience (Tính tương tác và trải nghiệm người dùng):** Tích hợp các tính năng tương tác như hiệu ứng di chuột, chú giải công cụ và các phần tử có thể nhấp chuột để mang lại trải nghiệm người dùng mượt mà và hấp dẫn. Cho phép người dùng tương tác với bảng điều khiển và khám phá dữ liệu dựa trên nhu cầu cụ thể của họ.
+
+![13-UI&UX](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/13-UI&UX.png)
+
+**Responsiveness and Adaptability (Khả năng tương thích và thích ứng):** Đảm bảo bảng điều khiển có khả năng tương thích và thích ứng với các kích thước màn hình và thiết bị khác nhau, cho phép người dùng truy cập và xem bảng điều khiển trên nhiều nền tảng.
+
+![14-Responsiveness-Adaptability](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/14-Responsiveness-Adaptability.png)
+
+
+> Thiết kế Dashboard không chỉ là "vẽ cho đẹp", mà là "thiết kế để dùng".
 
 * **Clarity (Sự rõ ràng):** Tránh lộn xộn (Clutter). Chỉ hiển thị những gì thực sự cần thiết.
 * **Relevance (Sự liên quan):** Dữ liệu phải phục vụ đúng mục tiêu của người xem (Ví dụ: Dashboard cho CEO khác với Dashboard cho Kỹ thuật viên).
 * **Simplicity (Sự đơn giản):** Sử dụng màu sắc hợp lý (không quá lòe loẹt), font chữ dễ đọc.
 * **Consistency (Sự nhất quán):** Giữ nguyên quy ước màu sắc và bố cục xuyên suốt các trang.
 
----
 
-## 3. Tổng kết & Từ khóa (Cheatsheet)
+### 2.4 Ví dụ về trực quan hóa bảng điều khiển 
 
-### So sánh nhanh: Khi nào dùng biểu đồ nào?
+- **Biểu đồ đường hoặc biểu đồ vùng** thể hiện xu hướng và biến động của các chỉ số chính theo thời gian.
+- **Biểu đồ cột hoặc biểu đồ thanh** so sánh hiệu suất hoặc các chỉ số giữa các danh mục hoặc khu vực khác nhau.
+- **Biểu đồ đo hoặc chỉ báo tiến độ** cung cấp hình ảnh trực quan về mức độ đạt được mục tiêu hoặc mức độ hiệu suất.
+- **Bản đồ nhiệt hoặc bản đồ phân vùng** màu thể hiện các mô hình địa lý hoặc sự biến đổi trong dữ liệu.
+- **Bảng hoặc lưới dữ liệu** trình bày thông tin dạng bảng chi tiết cho các chiều hoặc chỉ số cụ thể.
 
-| Loại dữ liệu | Biểu đồ đề xuất | Mục đích chính |
-| --- | --- | --- |
-| **So sánh các nhóm** (Categorical) | **Bar Chart** | So sánh độ lớn, số lượng. |
-| **Xem tỉ lệ phần trăm** (Categorical) | **Pie Chart** | Xem cơ cấu (Part-to-whole). |
-| **Xem xu hướng** (Time-series) | **Line Chart** | Xem sự thay đổi theo thời gian. |
-| **Phân tích văn bản** (Text) | **Word Cloud** | Tìm từ khóa phổ biến. |
+### 2.5 Tools for Creating Interactive Dashboards
+
+![15-Tableau](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/15-Tableau.png)
+> **Tableau:** Một công cụ trực quan hóa dữ liệu phổ biến và mạnh mẽ với khả năng tạo bảng điều khiển mở rộng.
+
+![16-Power-BI](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/16-Power-BI.png)
+> **Power BI:** Nền tảng phân tích dữ liệu kinh doanh của Microsoft cho phép tạo ra các bảng điều khiển và báo cáo tương tác.
+
+![17-Google-Data-Studio](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/17-Google-Data-Studio.png)
+> **Google Data Studio:** Một công cụ miễn phí của Google để tạo các bảng điều khiển và hình ảnh trực quan tùy chỉnh bằng cách sử dụng nhiều nguồn dữ liệu khác nhau.
+
+![18-JS](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/18-JS.png)
+> **D3.js:** Một thư viện JavaScript để tạo ra các hình ảnh trực quan và bảng điều khiển tương tác, động và tùy chỉnh.
 
 ### Thuật ngữ Dashboard
 
 * **Interactive Dashboard:** Bảng điều khiển cho phép người dùng click, lọc, zoom dữ liệu (khác với Static Report - báo cáo tĩnh dạng PDF/Giấy).
 * **Real-time Monitoring:** Khả năng cập nhật dữ liệu ngay lập tức khi có sự thay đổi thực tế.
 * **Data Aggregation:** Quá trình tổng hợp dữ liệu chi tiết thành các chỉ số tổng quan (Sum, Average) để hiển thị lên Dashboard.
-
----
-
-*Lưu ý: Phần này hoàn thiện kỹ năng Trực quan hóa dữ liệu (Visualization) trong quy trình Data Mining. Từ việc vẽ biểu đồ đơn lẻ đến việc xây dựng hệ thống báo cáo quản trị.*
