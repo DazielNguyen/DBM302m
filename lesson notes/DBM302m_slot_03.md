@@ -1,6 +1,6 @@
 # **Slot 3 - Chapter 2 (Part 2): Non-Numerical Viz & Dashboards**
 
-**Ngày học: 09/01/2026**
+**Ngày học: 13/01/2026**
 
 **Nội dung chương học:**
 - 2.3 Visualization of Non-Numerical Data
