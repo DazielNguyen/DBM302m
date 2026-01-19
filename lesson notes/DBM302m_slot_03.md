@@ -20,7 +20,7 @@
 
 **Donut Charts** (Biểu đồ hình bánh donut) tương tự như biểu đồ hình tròn nhưng có một lỗ ở giữa, cho phép đặt thêm thông tin hoặc nhãn vào đó.
 
-![01-pie-donut-charts](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/01-pie-donut-charts.png)
+![01-pie-donut-charts](/image_lesson_notes/slot_03/01-pie-donut-charts.png)
 
 > Biểu đồ tròn và biểu đồ hình bánh donut
 
@@ -28,7 +28,7 @@
 
 **Stacked Bar Charts (Biểu đồ cột xếp chồng)** thể hiện thành phần của một danh mục bằng cách xếp chồng các cột hình chữ nhật lên nhau. Mỗi đoạn cột đại diện cho một tiểu danh mục khác nhau, và chiều dài của đoạn cột thể hiện tỷ lệ của tiểu danh mục đó.
 
-![02-stacked-bar-chart](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/02-stacked-bar-chart.png)
+![02-stacked-bar-chart](/image_lesson_notes/slot_03/02-stacked-bar-chart.png)
 
 > Biểu đồ cột xếp chồng
 
@@ -45,7 +45,7 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 
 **Tag Clouds** (Đám mây thẻ) tương tự như đám mây từ ngữ nhưng hiển thị các thẻ hoặc nhãn với kích thước phông chữ khác nhau để thể hiện tần suất hoặc tầm quan trọng của chúng.
 
-![03-word-tag-cloud](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/03-word-tag-cloud.png)
+![03-word-tag-cloud](/image_lesson_notes/slot_03/03-word-tag-cloud.png)
 
 > Minh họa Word Clouds và Tag Clouds
 
@@ -56,7 +56,7 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 
 **Network Graphs** (Đồ thị mạng (hoặc node-link sơ đồ nút-liên kết)) thể hiện mối quan hệ giữa các thực thể dưới dạng các nút (đỉnh) được kết nối bởi các cạnh (đường thẳng). Chúng rất hiệu quả để trực quan hóa các mạng lưới phức tạp hoặc các mối quan hệ xã hội.
 
-![04-Chord-Diagrams-and-Network-Graphs](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/04-Chord-Diagrams-and-Network-Graphs.png)
+![04-Chord-Diagrams-and-Network-Graphs](/image_lesson_notes/slot_03/04-Chord-Diagrams-and-Network-Graphs.png)
 
 > Minh họa Chord Diagrams và Network Graphs
 
@@ -67,7 +67,7 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 **Sunburst Charts** (Biểu đồ hình tia nắng) là một phần mở rộng của sơ đồ cây, trong đó hệ thống phân cấp được hiển thị dưới dạng các vòng tròn đồng tâm. Kích thước hoặc góc của mỗi phần biểu thị tỷ lệ hoặc giá trị liên quan đến danh mục đó.
 
 
-![05-Tree-Diagrams-and-Sunburst-Charts](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/05-Tree-Diagrams-and-Sunburst-Charts.png)
+![05-Tree-Diagrams-and-Sunburst-Charts](/image_lesson_notes/slot_03/05-Tree-Diagrams-and-Sunburst-Charts.png)
 
 > Tree Diagrams and Sunburst Charts
 
@@ -83,7 +83,7 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 - Chọn các thành phần chính
 - Chiếu dữ liệu
 
-![06-calculate-PCA](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/06-calculate-PCA.png)
+![06-calculate-PCA](/image_lesson_notes/slot_03/06-calculate-PCA.png)
 
 > Các bước tính PCA
 
@@ -99,11 +99,11 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 - MDS dựa trên hệ mét so với MDS không dựa trên hệ mét: MDS dựa trên hệ mét bảo toàn khoảng cách thực tế, trong khi MDS không dựa trên hệ mét bảo toàn thứ tự xếp hạng của khoảng cách.
 
 
-![07-guide-to-multidimensional-scaling-in-python-with-scikit-learn](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/07-guide-to-multidimensional-scaling-in-python-with-scikit-learn.webp)
+![07-guide-to-multidimensional-scaling-in-python-with-scikit-learn](/image_lesson_notes/slot_03/07-guide-to-multidimensional-scaling-in-python-with-scikit-learn.webp)
 
 > Cách tính Multidimensional Scaling
 
-![08-multi-scaling](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/08-multi-scaling.png)
+![08-multi-scaling](/image_lesson_notes/slot_03/08-multi-scaling.png)
 
 > Minh hóa trực quan hóa Multidimensional Scaling
 
@@ -117,7 +117,7 @@ Khi dữ liệu là các đoạn văn, comment, hoặc bài báo, ta không th�
 
 - Các điểm dữ liệu có mẫu tương tự sẽ có các đường thẳng gần nhau hơn, và các điểm ngoại lệ sẽ nổi bật.
 
-![09-Parallel-Coordinates](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/09-Parallel-Coordinates.png)
+![09-Parallel-Coordinates](/image_lesson_notes/slot_03/09-Parallel-Coordinates.png)
 
 > Minh hóa trực quan hóa Multidimensional Scaling
 
@@ -182,24 +182,24 @@ Sau khi đã tạo ra các biểu đồ riêng lẻ (Charts), ta cần tập h�
 
 **Data Organization and Layout (Tổ chức và bố cục dữ liệu):** Sắp xếp các thành phần của bảng điều khiển một cách logic và trực quan, đảm bảo rằng thông tin liên quan được nhóm lại với nhau để dễ hiểu.
 
-![10-data-org-layout](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/10-data-org-layout.png)
+![10-data-org-layout](/image_lesson_notes/slot_03/10-data-org-layout.png)
 
 **Visual Hierarchy and Emphasis (Thứ tự ưu tiên và nhấn mạnh trực quan):** Sử dụng các tín hiệu trực quan như kích thước, màu sắc và vị trí để nhấn mạnh dữ liệu quan trọng và hướng sự chú ý của người dùng đến những thông tin chi tiết phù hợp nhất.
 
-![11-Visual-Hierarchy&Emphasis](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/11-Visual-Hierarchy&Emphasis.png)
+![11-Visual-Hierarchy&Emphasis](/image_lesson_notes/slot_03/11-Visual-Hierarchy&Emphasis.png)
 
 **Color Schemes and Aesthetics (Phối màu và tính thẩm mỹ):** Chọn bảng màu dễ nhìn, phù hợp với dữ liệu và mục đích tổng thể của bảng điều khiển. Tránh các sự kết hợp màu sắc quá rực rỡ hoặc gây mất tập trung.
 
-![12-Color-Schemes&Aesthetics](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/12-Color-Schemes&Aesthetics.png)
+![12-Color-Schemes&Aesthetics](/image_lesson_notes/slot_03/12-Color-Schemes&Aesthetics.png)
 
 
 **Interactivity and User Experience (Tính tương tác và trải nghiệm người dùng):** Tích hợp các tính năng tương tác như hiệu ứng di chuột, chú giải công cụ và các phần tử có thể nhấp chuột để mang lại trải nghiệm người dùng mượt mà và hấp dẫn. Cho phép người dùng tương tác với bảng điều khiển và khám phá dữ liệu dựa trên nhu cầu cụ thể của họ.
 
-![13-UI&UX](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/13-UI&UX.png)
+![13-UI&UX](/image_lesson_notes/slot_03/13-UI&UX.png)
 
 **Responsiveness and Adaptability (Khả năng tương thích và thích ứng):** Đảm bảo bảng điều khiển có khả năng tương thích và thích ứng với các kích thước màn hình và thiết bị khác nhau, cho phép người dùng truy cập và xem bảng điều khiển trên nhiều nền tảng.
 
-![14-Responsiveness-Adaptability](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/14-Responsiveness-Adaptability.png)
+![14-Responsiveness-Adaptability](/image_lesson_notes/slot_03/14-Responsiveness-Adaptability.png)
 
 
 > Thiết kế Dashboard không chỉ là "vẽ cho đẹp", mà là "thiết kế để dùng".
@@ -220,16 +220,16 @@ Sau khi đã tạo ra các biểu đồ riêng lẻ (Charts), ta cần tập h�
 
 ### 2.5 Tools for Creating Interactive Dashboards
 
-![15-Tableau](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/15-Tableau.png)
+![15-Tableau](/image_lesson_notes/slot_03/15-Tableau.png)
 > **Tableau:** Một công cụ trực quan hóa dữ liệu phổ biến và mạnh mẽ với khả năng tạo bảng điều khiển mở rộng.
 
-![16-Power-BI](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/16-Power-BI.png)
+![16-Power-BI](/image_lesson_notes/slot_03/16-Power-BI.png)
 > **Power BI:** Nền tảng phân tích dữ liệu kinh doanh của Microsoft cho phép tạo ra các bảng điều khiển và báo cáo tương tác.
 
-![17-Google-Data-Studio](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/17-Google-Data-Studio.png)
+![17-Google-Data-Studio](/image_lesson_notes/slot_03/17-Google-Data-Studio.png)
 > **Google Data Studio:** Một công cụ miễn phí của Google để tạo các bảng điều khiển và hình ảnh trực quan tùy chỉnh bằng cách sử dụng nhiều nguồn dữ liệu khác nhau.
 
-![18-JS](https://github.com/DazielNguyen/DBM302m/blob/main/image_lesson_notes/slot_03/18-JS.png)
+![18-JS](/image_lesson_notes/slot_03/18-JS.png)
 > **D3.js:** Một thư viện JavaScript để tạo ra các hình ảnh trực quan và bảng điều khiển tương tác, động và tùy chỉnh.
 
 ### Thuật ngữ Dashboard
