@@ -1,2 +1,11 @@
 /slides *
+# macOS system files
 .DS_Store
+**/.DS_Store
+._.DS_Store
+**/._.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
