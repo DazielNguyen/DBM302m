@@ -1,4 +1,8 @@
 /slides *
+
+# CSV data files
+*.csv
+
 # macOS system files
 .DS_Store
 **/.DS_Store
