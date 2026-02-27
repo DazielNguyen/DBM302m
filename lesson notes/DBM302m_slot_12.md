@@ -1,4 +1,13 @@
+# **Slot 12 - Chapter 3 & 4 Advance Topic on Pattern Discovery & Introduction to Cluster Analysis**
 
+**Ngày học: 27/02/2026**
+
+**Nội dung chương học:**
+
+- 3.12 Advance Topic on Pattern Discovery
+- 4.1 Introduction to Cluster Analysis - *Note trong slot 13*
+
+---
 
 ### 1. Xử lý luồng dữ liệu (Stream Data Processing) & Single Scan
 
@@ -82,3 +91,70 @@ Nguyên tắc tối thượng của phân cụm là: **Các điểm trong cùng 
 * *Cách làm:* Bạn chạy thuật toán K-Means nhiều lần với $K = 1, 2, 3, 4, 5...$ Ở mỗi lần, bạn tính tổng bình phương khoảng cách từ các điểm đến trung tâm cụm của nó (gọi là WCSS - Within-Cluster Sum of Square). $K$ càng tăng thì WCSS càng giảm.
 * *Dấu hiệu nhận biết:* Vẽ đồ thị WCSS theo $K$, đồ thị sẽ dốc xuống. Điểm mà tại đó độ dốc của đồ thị gãy gập lại (trông như một cái "cùi chỏ" - Elbow), thì đó chính là số lượng cụm tối ưu. Qua điểm đó, việc tăng thêm cụm không mang lại nhiều giá trị phân loại nữa.
 
+---
+
+## 1. Khai phá dữ liệu luồng (Data Streams & Approximate Mining)
+
+*Nguồn tham khảo: Slide 3.12*
+
+### 1.1. Khái niệm cốt lõi về Data Streams
+
+* **Data Stream (Dữ liệu luồng):** Là tập dữ liệu liên tục, có thứ tự, thay đổi nhanh và có khối lượng khổng lồ (thậm chí vô hạn) .
+* **Thách thức:** Khác với CSDL truyền thống, dữ liệu luồng thay đổi quá nhanh và yêu cầu phản hồi theo thời gian thực (real-time response). Việc truy cập ngẫu nhiên rất đắt đỏ, do đó các thuật toán chỉ được phép quét dữ liệu một lần duy nhất (single-scan algorithm) và chỉ lưu trữ các bản tóm tắt của dữ liệu .
+
+### 1.2. Khai phá mẫu xấp xỉ (Mining Approximate Frequent Patterns)
+
+Việc tìm kiếm mẫu phổ biến chính xác tuyệt đối trong dữ liệu luồng là phi thực tế vì không đủ bộ nhớ để lưu trữ toàn bộ lịch sử (ngay cả dưới dạng nén như FP-tree) . Giải pháp là chấp nhận một mức sai số nhỏ.
+
+* **Thuật toán Lossy Counting:** * **Tư duy:** Không lưu trữ các mục có tần suất xuất hiện quá thấp để tiết kiệm bộ nhớ. Chia luồng dữ liệu thành các "bucket" (xô) và giảm dần bộ đếm qua từng bucket.
+* **Công thức tham số:** Dựa trên ngưỡng hỗ trợ $\sigma$, ngưỡng sai số $\epsilon$, và độ dài luồng $N$. Thuật toán trả về các mục có tần suất vượt qua $(\sigma - \epsilon)N$.
+* **Đảm bảo xấp xỉ:** Không có âm tính giả (No false negatives). Sai số tần suất bị ước lượng thấp đi tối đa là $\epsilon N$ .
+
+---
+
+## 2. Ứng dụng nâng cao và Vấn đề bảo mật
+
+*Nguồn tham khảo: Slide 3.12*
+
+### 2.1. Các miền ứng dụng mở rộng
+
+* **Software Bug Mining (Tìm lỗi phần mềm):** Mã nguồn phần mềm và quá trình thực thi chứa các mẫu ẩn. Những mẫu phổ biến có thể đại diện cho các quy tắc/thuộc tính chuẩn. Bất kỳ sự vi phạm nào so với các mẫu này (anomalies) rất có thể là lỗi (bugs). Khai phá mẫu giúp thu hẹp phạm vi cần kiểm tra lỗi.
+
+
+* **Visual Pattern Discovery (Khai phá mẫu thị giác):** Một hình ảnh có thể được biểu diễn bằng các điểm ảnh cơ sở (visual primitives/interest points) . Mỗi điểm cơ sở này được mô tả bằng một vector đặc trưng đa chiều, biến hình ảnh thành một tập hợp các mẫu để thuật toán có thể phân tích .
+
+
+
+### 2.2. Vấn đề bảo mật (Privacy Issues)
+
+Việc khai phá dữ liệu quá hiệu quả mang lại một tác dụng phụ: Xâm phạm quyền riêng tư. Sự chính xác của mô hình và tính riêng tư luôn mâu thuẫn với nhau (tăng cái này sẽ làm giảm cái kia) .
+
+Có 3 khía cạnh bảo mật chính trong Data Mining:
+
+1. **Input privacy (Data hiding - Ẩn dữ liệu đầu vào):** Làm biến dạng hoặc ẩn dữ liệu gốc để ngăn người khai phá trích xuất thông tin mật .
+2. **Output privacy (Knowledge hiding - Ẩn tri thức đầu ra):** Không tiết lộ các mẫu hoặc tri thức nhạy cảm đã được tìm thấy từ tập dữ liệu .
+3. **Owner privacy (Quyền riêng tư của chủ sở hữu):** Không cho phép các bên khác biết được nguồn gốc thực sự của dữ liệu đang được sử dụng .
+
+---
+
+## 3. Tổng kết & Tra cứu nhanh (Cheatsheet)
+
+### Bảng tóm tắt các thách thức dữ liệu nâng cao
+
+| Loại dữ liệu / Vấn đề | Đặc điểm chính | Giải pháp đề xuất |
+| --- | --- | --- |
+| **Data Streams** | Chảy liên tục, vô hạn, không thể lưu trữ toàn bộ. | Single-scan algorithms, Lossy Counting. |
+| **Bảo mật dữ liệu** | Xung đột giữa độ chính xác và quyền riêng tư. | Input/Output/Owner Privacy strategies. |
+| **Software Debugging** | Khó tìm lỗi do không có quy tắc rõ ràng. | Tìm mẫu phổ biến $\to$ Các mã đi ngược lại mẫu = Bug. |
+
+### Từ khóa quan trọng
+
+* **Single-scan algorithm:** Thuật toán duyệt qua dữ liệu chỉ đúng một lần (Bắt buộc dùng cho Data Streams vì dữ liệu trôi qua không giữ lại được).
+* **Lossy Counting:** Thuật toán đếm xấp xỉ, đánh đổi một chút sai số (guaranteed error bound) để tiết kiệm lượng lớn bộ nhớ.
+* **Knowledge Hiding:** Đảm bảo rằng ngay cả khi mô hình Data Mining tìm ra quy luật, quy luật đó không được tiết lộ nếu nó vi phạm quyền riêng tư.
+
+---
+
+*Ghi chú: Nội dung được tổng hợp từ tệp: 3.12 Advanced Topics on Pattern Discovery.pptx.*
+
+---
