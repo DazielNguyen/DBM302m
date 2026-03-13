@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+COMMIT_MSG_FILE="$1"
+COMMIT_MSG="$(head -n 1 "$COMMIT_MSG_FILE" | tr -d '\r')"
+
+# Allow default Git-generated merge/revert commits.
+if [[ "$COMMIT_MSG" =~ ^Merge\  ]] || [[ "$COMMIT_MSG" =~ ^Revert\  ]]; then
+  exit 0
+fi
+
+# Allowed types include 'add' based on team preference.
+PATTERN='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert|add)(\([a-z0-9._/-]+\))?(!)?: [a-z].+'
+
+if [[ ! "$COMMIT_MSG" =~ $PATTERN ]]; then
+  cat <<'EOF'
+ERROR: Invalid commit message format.
+
+Expected:
+  <type>(optional-scope): <short summary>
+
+Allowed types:
+  feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert, add
+
+Examples:
+  feat: add customer segmentation dashboard
+  fix(parser): handle empty input safely
+  docs: update lab slot 16 instructions
+  chore: bump pandas to latest patch version
+EOF
+  exit 1
+fi
